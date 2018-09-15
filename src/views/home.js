@@ -1,8 +1,11 @@
 import React from 'react';
 
+import Link from '../components/link';
+
 const Home = () => (
   <div>
-    Home <a href="/abc">Not Found</a>
+    Home <a href="https://www.google.com">External</a>
+    <Link to="/posts">Posts</Link>
   </div>
 );
 
