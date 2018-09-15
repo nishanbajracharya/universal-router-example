@@ -25,7 +25,7 @@ const INITIAL_STATE = {
       name: 'MNO',
       email: '...',
       createdAt: '2018-05-05T00:00:00.000Z'
-    },
+    }
   }
 };
 
