@@ -18,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "analyze": "node analyze.js"
   },
   "repository": {
     "type": "git",
@@ -34,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/nishanbajracharya/universal-router-example/issues"
   },
-  "homepage": "https://github.com/nishanbajracharya/universal-router-example#readme"
+  "homepage": "https://nishanbajracharya.github.io/universal-router-example",
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^3.0.2"
+  }
 }
