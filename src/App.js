@@ -4,14 +4,14 @@ import { injectGlobal } from 'styled-components'
 
 import store from './store';
 
+import 'normalize.css';
+
 injectGlobal`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
-`
+`;
 
 class App extends Component {
   render() {
