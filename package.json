@@ -1,0 +1,32 @@
+{
+  "name": "universal-router-example",
+  "version": "1.0.0",
+  "description": "An example of routing in react using universal-router",
+  "main": "src/index.js",
+  "dependencies": {
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishanbajracharya/universal-router-example.git"
+  },
+  "keywords": [
+    "react",
+    "router",
+    "universal-router"
+  ],
+  "author": "Nishan Bajracharya <nisbaj11@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nishanbajracharya/universal-router-example/issues"
+  },
+  "homepage": "https://github.com/nishanbajracharya/universal-router-example#readme"
+}
