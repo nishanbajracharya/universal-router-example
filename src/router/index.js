@@ -1,33 +1,22 @@
 import React from 'react';
 import UniversalRouter from 'universal-router';
 
+import posts from './posts';
+
 const routes = {
   path: '',
   children: [
     {
       path: '',
-      load: () => import(/* webpackChunkName: 'home' */ './views/home')
+      load: () => import(/* webpackChunkName: 'home' */ '../views/home')
     },
     {
       path: '/posts',
-      children: [
-        {
-          path: '',
-          load: () => import(/* webpackChunkName: 'posts' */ './views/posts')
-        },
-        {
-          path: '/:id',
-          load: () => import(/* webpackChunkName: 'posts' */ './views/posts')
-        },
-        {
-          path: '(.*)',
-          load: () => import(/* webpackChunkName: 'notFound' */ './views/notFound')
-        }
-      ]
+      children: posts
     },
     {
       path: '(.*)',
-      load: () => import(/* webpackChunkName: 'notFound' */ './views/notFound')
+      load: () => import(/* webpackChunkName: 'notFound' */ '../views/notFound')
     }
   ]
 };
