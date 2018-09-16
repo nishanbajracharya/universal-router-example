@@ -37,6 +37,10 @@
   },
   "homepage": "https://nishanbajracharya.github.io/universal-router-example",
   "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.6.0",
+    "eslint-plugin-babel": "^5.2.0",
+    "eslint-plugin-react": "^7.11.1",
     "webpack-bundle-analyzer": "^3.0.2"
   }
 }

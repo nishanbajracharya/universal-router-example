@@ -4,11 +4,11 @@ const comments = [
     children: [
       {
         path: '',
-        load: () => import(/* webpackChunkName: 'posts' */ '../views/postDetail')
+        load: () => import(/* webpackChunkName: 'postDetail' */ '../views/postDetail')
       },
       {
         path: '/:commentId',
-        load: () => import(/* webpackChunkName: 'posts' */ '../views/postDetail')
+        load: () => import(/* webpackChunkName: 'postDetail' */ '../views/postDetail')
       },
       {
         path: '(.*)',

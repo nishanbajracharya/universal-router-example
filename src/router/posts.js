@@ -11,7 +11,7 @@ const posts = [
       {
         path: '',
         load: () =>
-          import(/* webpackChunkName: 'posts' */ '../views/postDetail')
+          import(/* webpackChunkName: 'postDetail' */ '../views/postDetail')
       },
       ...comments
     ]
