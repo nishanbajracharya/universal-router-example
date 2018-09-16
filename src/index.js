@@ -21,10 +21,9 @@ injectGlobal`
 const container = document.getElementById('root');
 
 export const render = async (location, action) => {
-  console.log(location, action)
   const page = await router.resolve(window.location.pathname);
   ReactDOM.render(<Provider store={store}>{page}</Provider>, container);
-}
+};
 
 render();
 

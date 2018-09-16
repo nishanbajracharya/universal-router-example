@@ -7,9 +7,13 @@ export default class Link extends React.Component {
     event.preventDefault();
 
     history.push(to, state);
-  }
+  };
   render() {
-    const {to, children, state, ...props} = this.props;
-    return <a href={to} {...props} onClick={e => this.handleClick(e, to, state)}>{children}</a>
+    const { to, children, state, ...props } = this.props;
+    return (
+      <a href={to} {...props} onClick={e => this.handleClick(e, to, state)}>
+        {children}
+      </a>
+    );
   }
 }

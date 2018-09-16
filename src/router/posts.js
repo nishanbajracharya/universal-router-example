@@ -10,7 +10,8 @@ const posts = [
     children: [
       {
         path: '',
-        load: () => import(/* webpackChunkName: 'posts' */ '../views/posts')
+        load: () =>
+          import(/* webpackChunkName: 'posts' */ '../views/postDetail')
       },
       ...comments
     ]

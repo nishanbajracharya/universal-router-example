@@ -1,10 +1,23 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-const Posts = ({
-  routeProps
-}) => <div>
-  Posts {routeProps.params.id}
-  {routeProps.params.commentId && <p>Comment {routeProps.params.commentId}</p>}
-  </div>;
+import Link from '../components/link';
 
-export default Posts;
+const Posts = ({ list = [], data = {}, routeProps = {} }) => (
+  <div>
+    {list.map((item, index) => (
+      <div key={index}>
+        <p>{data[item].title}</p>
+        <p>
+          {data[item].desc}{' '}
+          <Link to={`${routeProps.pathname}/${item}`}>more</Link>
+        </p>
+      </div>
+    ))}
+  </div>
+);
+
+export default connect(state => ({
+  list: state.posts.list,
+  data: state.posts.data
+}))(Posts);
